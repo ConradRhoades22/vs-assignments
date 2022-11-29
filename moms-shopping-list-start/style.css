@@ -17,9 +17,10 @@
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: lightgray;
 }
 
 .label {
@@ -40,4 +41,8 @@
 #list div {
     margin-bottom: 10px;
     text-align: center;
+}
+
+body {
+    background-color: lightgray;
 }

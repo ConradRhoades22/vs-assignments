@@ -15,14 +15,22 @@ form.addEventListener("submit", function(event){
     const buttonDiv = document.createElement("div")
 
     const editButton = document.createElement('button')
+    editButton.style.margin = "5px"
     editButton.innerText = 'Edit'
     editButton.addEventListener("click", function(){
         textDiv.contentEditable = true;
         textDiv.style.backgroundColor = "#dddbdb";
-    })
-    editButton.addEventListener("submit", function(){
-        textDiv.contentEditable = false;
-        textDiv.style.backgroundColor = "default"
+        
+    if (textDiv.contentEditable = true) {
+            editButton.textContent = "Save";
+        } else {
+            editButton.textContent = "Edit";
+        }
+        editButton.addEventListener("click", function(){
+            textDiv.contentEditable = false;
+            textDiv.style.backgroundColor = "inherit"
+            editButton.textContent = "Edit"
+        })
     })
     buttonDiv.append(editButton)
 
