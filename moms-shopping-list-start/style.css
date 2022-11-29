@@ -29,6 +29,7 @@
 #list {
     flex-direction: column;
     display: flex;
+    padding: 0px;
 }
 
 #list > li{
