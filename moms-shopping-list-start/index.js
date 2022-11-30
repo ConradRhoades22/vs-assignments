@@ -21,7 +21,7 @@ form.addEventListener("submit", function(event){
         textDiv.contentEditable = true;
         textDiv.style.backgroundColor = "#dddbdb";
         
-    if (textDiv.contentEditable = true) {
+        if (textDiv.contentEditable = true) {
             editButton.textContent = "Save";
         } else {
             editButton.textContent = "Edit";
@@ -37,7 +37,7 @@ form.addEventListener("submit", function(event){
     const removeButton = document.createElement('button')
     removeButton.innerText = 'X'
     removeButton.addEventListener("click", function(){
-        li.remove(0)
+        li.remove()
     })
     buttonDiv.append(removeButton)
     li.append(buttonDiv)
