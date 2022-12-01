@@ -1,0 +1,6 @@
+var readline =require("readline-sync")
+const firstNumber = readline.question("What is the first number you would like to calculate?")
+console.log(firstNumber)
+const secondNumber = readline.question("What is the second number you would like to calculate?")
+console.log("First number:" + firstNumber + "  " + "Second number:" + secondNumber)
+const mathfunction = readline.question("What function would you like to use? Add, Subtract, Multiply, or Divide?")
